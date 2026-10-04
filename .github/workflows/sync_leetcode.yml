@@ -3,7 +3,7 @@ name: Sync LeetCode Submissions
 on:
   workflow_dispatch: # Allows you to run it manually at any time
   schedule:
-    - cron: '0 0 * * *' # Automatically runs every night at midnight UTC
+    - cron: '0*/12 * * *' # Automatically runs every night at midnight UTC
 
 jobs:
   build:
